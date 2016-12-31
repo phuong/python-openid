@@ -49,7 +49,6 @@ try:
 except ValueError:
     version_info = (None, None, None)
 else:
+    version_info = tuple(version_info)
     if len(version_info) != 3:
         version_info = (None, None, None)
-    else:
-        version_info = tuple(version_info)
